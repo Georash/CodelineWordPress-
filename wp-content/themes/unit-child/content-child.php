@@ -29,18 +29,18 @@
                 foreach ($country as $country_val){
                     echo $country_val->name;
                 }
-                ?>
+                ?>,
                 Genre :
                 <?php
                     foreach ($genre as $genre_val){
                         echo $genre_val->name;
                     }
-                ?>
-
+                ?>,
+                <!--Display the custom text field ticket price and reloase data-->
                 Price :
                 <?php
                 echo get_post_meta(get_the_ID(), 'Ticket Price', true);
-                ?>
+                ?>,
 
                 Release data :
                 <?php
